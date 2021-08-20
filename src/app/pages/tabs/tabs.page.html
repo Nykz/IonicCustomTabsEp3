@@ -1,0 +1,39 @@
+<ion-tabs #tabs (ionTabsDidChange)="setCurrentTab($event)">
+
+  <!-- -------------------Custom Tabs with fab button------------------------------- -->
+  <ion-fab 
+    *ngIf="selectTab && !isHide"
+    [class]="selectTab == 'wishlist' ? 'right-align animated' : (selectTab == 'search' ? 'left-align animated' : 'animated')"
+    vertical="bottom" 
+    [horizontal]="selectTab == 'home' ? 'start' : (selectTab == 'profile' ? 'end' : 'center')" 
+    translucent="true">
+    <ion-fab-button>
+      <ion-icon [name]="getIcon()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon *ngIf="selectTab != 'home'" name="home-outline"></ion-icon>
+      <ion-label *ngIf="selectTab == 'home'">Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="search">
+      <ion-icon *ngIf="selectTab != 'search'" name="search-outline"></ion-icon>
+      <ion-label *ngIf="selectTab == 'search'">Search</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="add-post">
+      <ion-icon *ngIf="selectTab != 'add-post'" name="film-outline"></ion-icon>
+      <ion-label *ngIf="selectTab == 'add-post'">Reels</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="wishlist">
+      <ion-icon *ngIf="selectTab != 'wishlist'" name="heart-outline"></ion-icon>
+      <ion-label *ngIf="selectTab == 'wishlist'">Activity</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="profile">
+      <ion-icon *ngIf="selectTab != 'profile'" name="person-outline"></ion-icon>
+      <ion-label *ngIf="selectTab == 'profile'">Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>
