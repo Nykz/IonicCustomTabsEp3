@@ -5,7 +5,7 @@ Watch the Full Episode on YouTube at https://www.youtube.com/watch?v=8QbH3BpP8dk
 
 Learn to build Instagram CLone App: https://www.youtube.com/playlist?list=PLixvNT19uDK7tFopqRcm8iTPKNc69VGwl
 
-<img src="https://github.com/Nykz/IonicCustomTabsEp2/blob/main/THUMBNAILnew.png" width="800" height="400" />
+<img src="https://github.com/Nykz/IonicCustomTabsEp3/blob/master/THUMBNAIL%20NEW-min.png" width="800" height="400" />
 
 ### Steps to Setup this Custom Tabs Instagram Clone App in your system
 
